@@ -1,0 +1,37 @@
+name: Audit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  audit:
+    runs-on: macos-15
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_FROM_API: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Tap repository
+        run: brew tap --custom-remote vaayne/tap "$GITHUB_WORKSPACE"
+
+      - name: Audit casks
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          casks=()
+          while IFS= read -r path; do
+            casks+=("$(basename "${path%.rb}")")
+          done < <(find Casks -name '*.rb' -print | sort)
+
+          if [[ ${#casks[@]} -eq 0 ]]; then
+            echo "No casks found."
+            exit 0
+          fi
+
+          brew audit --strict --cask --tap vaayne/tap "${casks[@]}"
