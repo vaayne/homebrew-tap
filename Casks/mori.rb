@@ -1,6 +1,6 @@
 cask "mori" do
-  version "0.1.1"
-  sha256 "ee190ae705d30de6587831762e1785ef7ce8e0774a84e434ffa616c1072eb21e"
+  version "0.1.2"
+  sha256 "c5be65cb2fe547e0701ace7a88a0dabf98e41c289da519143d3be1a8f3e10109"
 
   url "https://github.com/vaayne/mori/releases/download/v#{version}/Mori-#{version}-macos-arm64.zip"
   name "Mori"
@@ -12,6 +12,7 @@ cask "mori" do
   depends_on formula: "tmux"
 
   app "Mori.app"
+  binary "#{appdir}/Mori.app/Contents/MacOS/bin/mori", target: "mori"
 
   zap trash: [
     "~/Library/Application Support/Mori",
