@@ -3,13 +3,13 @@
     <channel>
         <title>Mori</title>
         <item>
-            <title>0.2.0</title>
-            <pubDate>Tue, 31 Mar 2026 02:29:43 +0000</pubDate>
-            <sparkle:version>0.2.0</sparkle:version>
-            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <title>0.2.1</title>
+            <pubDate>Tue, 31 Mar 2026 14:09:42 +0000</pubDate>
+            <sparkle:version>0.2.1</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/vaayne/mori/releases/download/v0.2.0/Mori-0.2.0-macos-arm64.zip" length="11826585" type="application/octet-stream" sparkle:edSignature="+Jo9sIqVTyyc1KGgZfBg/kggsctyea5UqFAVgXG1xhBHgJqSnfHeFv9pBEOiekRsio3beQlaPQRMtwzE6o6hCA=="/>
+            <enclosure url="https://github.com/vaayne/mori/releases/download/v0.2.1/Mori-0.2.1-macos-arm64.zip" length="11833056" type="application/octet-stream" sparkle:edSignature="x5icmpvFCbcnHx4UhUOxusWNFGE3/uZ3GpQeRcWNSdihiRapX2XmAmSkKJFVzbsLdNzBHLexDchP5fbauPIfBg=="/>
         </item>
     </channel>
 </rss>

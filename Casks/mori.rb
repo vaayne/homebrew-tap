@@ -1,6 +1,6 @@
 cask "mori" do
-  version "0.2.0"
-  sha256 "fd12ad84314bc59f0a20b85b14279a3d8a96557c6a821700b6c9b830262395cb"
+  version "0.2.1"
+  sha256 "ad9134afe7564fd3b9d658d5fe94e12a6ff0fb6aac087387f608b7fe5729a5d2"
 
   url "https://github.com/vaayne/mori/releases/download/v#{version}/Mori-#{version}-macos-arm64.zip"
   name "Mori"
@@ -19,6 +19,9 @@ cask "mori" do
     "~/Library/Preferences/com.mori.app.plist",
     "~/Library/Preferences/dev.mori.app.plist",
     "~/Library/Preferences/dev.mori.shared.plist",
+    "~/Library/Preferences/com.vaayne.mori.plist",
+    "~/Library/Preferences/com.vaayne.mori.shared.plist",
     "~/Library/Saved Application State/dev.mori.app.savedState",
+    "~/Library/Saved Application State/com.vaayne.mori.savedState",
   ]
 end
