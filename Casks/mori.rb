@@ -1,6 +1,6 @@
 cask "mori" do
-  version "0.3.7"
-  sha256 "654c31d43e0a24c9a63577a7c9b03b07c5764bc30e4ee4b2f94b69833e2fb024"
+  version "0.3.8"
+  sha256 "9916d708a7bc3a0c720aa994586ced464475555e8aaeea66fc78bc9d84067c32"
 
   url "https://github.com/vaayne/mori/releases/download/v#{version}/Mori-#{version}-macos-arm64.zip"
   name "Mori"
